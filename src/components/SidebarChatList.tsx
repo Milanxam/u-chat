@@ -8,6 +8,7 @@ import { toast } from 'react-hot-toast'
 import UnseenChatToast from './UnseenChatToast'
 import Image from 'next/image'
 
+
 interface SidebarChatListProps {
   friends: User[]
   sessionId: string
@@ -28,8 +29,7 @@ const SidebarChatList: FC<SidebarChatListProps> = ({ friends, sessionId }) => {
     pusherClient.subscribe(toPusherKey(`user:${sessionId}:chats`))
     pusherClient.subscribe(toPusherKey(`user:${sessionId}:friends`))
 
-    const newFriendHandler = (newFriend: User) => {
-      console.log("received new user", newFriend)
+    const newFriendHandler = (newFriend: User) => { 
       setActiveChats((prev) => [...prev, newFriend])
     }
 

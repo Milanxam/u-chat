@@ -70,7 +70,7 @@ const Layout = async ({ children }: LayoutProps) => {
                         <div className='text-xs font-semibold leading-6 text-gray-400'>
                             Overview
                         </div>
-                        <ul role='list' className='-mx-2 mt-2 space-y-1'>
+                        <ul role='list' className='-mx-2 mt-2 space-y-'>
                             {sideBarOptions.map((option) => {
                                 const Icon = Icons[option.Icon]
                                 return(

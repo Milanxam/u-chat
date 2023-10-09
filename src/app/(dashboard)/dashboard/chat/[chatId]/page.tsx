@@ -58,8 +58,6 @@ const page = async ({ params }: PageProps) => {
   const chatPartner = JSON.parse(chatPartnerRaw) as User
   const initialMessages = await getChatMessages(chatId)
 
-  console.log('chatfriends', chatPartner)
-
   // max-h-[calc(100vh-6rem for first div og styling
 
   return (
