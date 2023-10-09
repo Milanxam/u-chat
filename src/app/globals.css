@@ -2,10 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+  }
+}
+
+@keyframes introLoad {
+  0% {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-introLoad {
+  animation: introLoad 0.2s ease-in-out;
+}
+
+
+.scrollbar-w-2::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.scrollbar-track-blue-lighter::-webkit-scrollbar-track {
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+}
+
+.scrollbar-thumb-blue::-webkit-scrollbar-thumb {
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-elevation-medium2);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low2:
+    0.3px 0.8px 0.8px hsl(var(--shadow-color) / 0.18),
+    0.4px 1.3px 1.3px -1.9px hsl(var(--shadow-color) / 0.14),
+    1.2px 3.5px 3.4px -3.8px hsl(var(--shadow-color) / 0.1);
+  --shadow-elevation-medium2:
+    0.3px 0.8px 0.8px hsl(var(--shadow-color) / 0.15),
+    0.5px 1.6px 1.5px -1px hsl(var(--shadow-color) / 0.09),
+    1.2px 3.6px 3.5px -1.9px hsl(var(--shadow-color) / 0.08),
+    2.8px 8.3px 8.1px -2.9px hsl(var(--shadow-color) / 0.07),
+    5.8px 17.4px 16.9px -3.8px hsl(var(--shadow-color) / 0.07);
+  --shadow-elevation-high2:
+    0.3px 0.8px 0.8px hsl(var(--shadow-color) / 0.14),
+    0.8px 2.5px 2.4px -0.4px hsl(var(--shadow-color) / 0.13),
+    1.5px 4.5px 4.4px -0.9px hsl(var(--shadow-color) / 0.12),
+    2.6px 7.7px 7.5px -1.3px hsl(var(--shadow-color) / 0.11),
+    4.3px 12.7px 12.4px -1.7px hsl(var(--shadow-color) / 0.1),
+    6.8px 20.3px 19.7px -2.1px hsl(var(--shadow-color) / 0.09),
+    10.6px 31.3px 30.5px -2.6px hsl(var(--shadow-color) / 0.08),
+    15.6px 46.5px 45.2px -3px hsl(var(--shadow-color) / 0.07),
+    22.4px 66.5px 64.7px -3.4px hsl(var(--shadow-color) / 0.06),
+    31px 92.1px 89.6px -3.8px hsl(var(--shadow-color) / 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +94,6 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+
