@@ -61,8 +61,8 @@ const page = async ({ params }: PageProps) => {
   // max-h-[calc(100vh-6rem for first div og styling
 
   return (
-    <div className='flex-1 justify-between flex flex-col bg-white h-full max-h-[calc(100vh-0.02rem)]'> 
-      <div className='flex sm:items-center justify-between py-4 pl-2 pt-5 border-b border-20 border-gray-300 z-10'>
+    <div className='flex-1 justify-between flex flex-col bg-white h-full max-h-[calc(100vh-0.02rem)] sm:mb-1'> 
+      <div className='flex sm:items-center justify-between py-4 pl-2 pt-5 border-b border-20 border-gray-300 z-10 sm:py-1'>
         <div className='relative flex items-center space-x-4'>
           <div className='relative'>
             <div className='relative w-8 sm:w-12 h-8 sm:h-12'>

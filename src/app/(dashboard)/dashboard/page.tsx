@@ -41,7 +41,7 @@ const page = async ({}) => {
         friendsWithLastMessage.map((friend) => (
           <div
             key={friend.id}
-            className='relative bg-zinc-50 border border-zinc-200 p-3 rounded-md group hover:bg-zinc-100 mb-4 shadow-medium'>
+            className='relative bg-zinc-50 border border-zinc-200 p-3 rounded-md group hover:bg-zinc-100 mb-4'>
             <div className='absolute right-4 inset-y-0 flex items-center'>
               <ChevronRight className='h-7 w-7 text-zinc-400 group-hover:translate-x-1 ease-in-out transition-transform duration-150' />
             </div>

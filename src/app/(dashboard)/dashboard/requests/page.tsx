@@ -9,7 +9,7 @@ const page = async () => {
   const session = await getServerSession(authOptions)
   if (!session) notFound()
 
-  // ids of people who sent the current logged-in user a friend request
+  // ids of people who sent current logged in user a friend requests
   const incomingSenderIds = (await fetchRedis(
     'smembers',
     `user:${session.user.id}:incoming_friend_requests`
@@ -19,18 +19,10 @@ const page = async () => {
     incomingSenderIds.map(async (senderId) => {
       const sender = (await fetchRedis('get', `user:${senderId}`)) as string
       const senderParsed = JSON.parse(sender) as User
-
-      if (senderParsed && senderParsed.email) {
-        return {
-          senderId,
-          senderEmail: senderParsed.email,
-        }
-      } else {
-        // Handle the case where 'senderParsed' is null or 'email' is not available
-        return {
-          senderId,
-          senderEmail: '(email can\'t be displayed)',
-        }
+      
+      return {
+        senderId,
+        senderEmail: senderParsed.email,
       }
     })
   )

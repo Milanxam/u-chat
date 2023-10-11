@@ -33,7 +33,7 @@
 
 .background-main {
   background-image: url('/spacesvg.jpg');
-  filter: brightness(20%);
+  filter: brightness(30%);
 }
 
 .scrollbar-track-blue-lighter::-webkit-scrollbar-track {
