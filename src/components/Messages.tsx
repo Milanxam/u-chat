@@ -75,7 +75,7 @@ const Messages: FC<MessagesProps> = ({
                                 'order-2 items-start': !isCurrentUser,
                             }
                           )}>
-                            <span className={cn('px-4 py-2 rounded-lg inline-block', {
+                            <span className={cn('px-4 py-2 rounded-lg inline-block shadow-medium', {
                                 'bg-indigo-500 text-white': isCurrentUser,
                                 'bg-gray-200 text-gray-900': !isCurrentUser,
                                 'rounded-br-none': !hasNextMessageFromSameUser && isCurrentUser,
