@@ -10,6 +10,7 @@ interface SignOutButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const SignOutButton: FC<SignOutButtonProps> = ({...props}) => {
     const [isSigningOut, setIsSigningOut] = useState<boolean>(false)
+    
   return (
   <Button {...props} variant='ghost' onClick={async () => {
     setIsSigningOut(true)

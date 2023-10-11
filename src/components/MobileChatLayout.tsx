@@ -61,7 +61,7 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
                   leaveFrom='translate-x-0'
                   leaveTo='-translate-x-full'>
                   <Dialog.Panel className='pointer-events-auto w-screen max-w-md'>
-                    <div className='flex h-full flex-col overflow-hidden bg-white py-6 shadow-xl'>
+                    <div className='flex h-full flex-col overflow-hidden bg-white py-6 shadow-xl w-80'>
                       <div className='px-4 sm:px-6'>
                         <div className='flex items-start justify-between'>
                           <Link href='/dashboard' className='flex h-16 shrink-0 item-center mb-5 gap-3'>
@@ -84,7 +84,7 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
                         {/* Content */}
 
                         {friends.length > 0 ? (
-                          <div className='text-xs font-semibold leading-6 text-gray-400'>
+                          <div className='text-xs font-semibold leading-6 text-gray-400 mb-2'>
                             Your chats
                           </div>
                         ) : null}
@@ -129,7 +129,7 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
                               </ul>
                             </li>
 
-                            <li className='-mx-6 mt-auto flex items-center mb-5'>
+                          <li className='-mx-6 mt-80 flex items-center mb-5'>
                                 <div className='flex flex-1 items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-gray-900'>
                                     <div className='relative h-8 w-8 bg-gray-50'>
                                         <Image
@@ -147,8 +147,8 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
                                             {session.user.email}
                                         </span>
                                     </div>
+                                    <SignOutButton className='h-full aspect-square rounded-2xl mr-3 ml-3  ' />
                                 </div>  
-                                <SignOutButton className='h-full aspect-square rounded-2xl mr-3' />
                             </li>
                           </ul>
                         </nav>

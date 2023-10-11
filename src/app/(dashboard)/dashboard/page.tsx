@@ -36,7 +36,7 @@ const page = async ({}) => {
     <div className='container py-12 text-black'>
       <h1 className='font-bold text-5xl mb-8'>Recent chats</h1>
       {friendsWithLastMessage.length === 0 ? (
-        <p className='text-sm text-zinc-500'>Nothing to show here yet, add some friends!</p>
+        <p className='text-sm text-zinc-500'>Nothing to show here yet, <span className='text-indigo-600'><Link href="/dashboard/add">add a friend</Link></span>!</p>
       ) : (
         friendsWithLastMessage.map((friend) => (
           <div

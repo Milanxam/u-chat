@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 @layer base {
   .container {
@@ -24,9 +25,15 @@
 }
 
 
+
 .scrollbar-w-2::-webkit-scrollbar {
   width: 0.25rem;
   height: 0.25rem;
+}
+
+.background-main {
+  background-image: url('/spacesvg.jpg');
+  filter: brightness(20%);
 }
 
 .scrollbar-track-blue-lighter::-webkit-scrollbar-track {
@@ -59,10 +66,10 @@
     0.4px 1.3px 1.3px -1.9px hsl(var(--shadow-color) / 0.14),
     1.2px 3.5px 3.4px -3.8px hsl(var(--shadow-color) / 0.1);
   --shadow-elevation-medium2:
-    0.3px 0.8px 0.8px hsl(var(--shadow-color) / 0.15),
-    0.5px 1.6px 1.5px -1px hsl(var(--shadow-color) / 0.09),
-    1.2px 3.6px 3.5px -1.9px hsl(var(--shadow-color) / 0.08),
-    2.8px 8.3px 8.1px -2.9px hsl(var(--shadow-color) / 0.07),
+    0.3px 0.8px 0.8px hsl(var(--shadow-color) / 0.17),
+    0.5px 1.6px 1.5px -1px hsl(var(--shadow-color) / 0.11),
+    1.2px 3.6px 3.5px -1.9px hsl(var(--shadow-color) / 0.10),
+    2.8px 8.3px 8.1px -2.9px hsl(var(--shadow-color) / 0.09),
     5.8px 17.4px 16.9px -3.8px hsl(var(--shadow-color) / 0.07);
   --shadow-elevation-high2:
     0.3px 0.8px 0.8px hsl(var(--shadow-color) / 0.14),
@@ -94,6 +101,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-
-
