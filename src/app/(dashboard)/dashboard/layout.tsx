@@ -51,7 +51,7 @@ const Layout = async ({ children }: LayoutProps) => {
                 />
             </div>
 
-            <div className='hidden md:flex h-full w-full max-w-xs grow flex-col gap-y-5 overflow-y-auto border-r border-gray-300 50 px-6'>
+            <div className='hidden md:flex h-full w-full max-w-xs grow flex-col gap-y-5 overflow-y-auto border-r border-gray-300 px-6'>
                 <Link href='/dashboard' className='flex h-16 shrink-0 item-center my-5 -ml-1 gap-3'>
                     <span>
                         <Icons.Logo />
@@ -63,7 +63,7 @@ const Layout = async ({ children }: LayoutProps) => {
                 </div>) : null}
 
                 <nav className='flex flex-1 flex-col'>
-                    <ul role='list' className='flex flex-1 flex-col gap-y-3 text-gray-900 bg-gray-50'>
+                    <ul role='list' className='flex flex-1 flex-col gap-y-3 text-gray-900'>
                         <li>
                             <SidebarChatList sessionId={session.user.id} friends={friends} />
                         </li>
