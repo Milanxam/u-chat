@@ -63,7 +63,7 @@ const Layout = async ({ children }: LayoutProps) => {
                 </div>) : null}
 
                 <nav className='flex flex-1 flex-col'>
-                    <ul role='list' className='flex flex-1 flex-col gap-y-3 text-gray-900'>
+                    <ul role='list' className='flex flex-1 flex-col gap-y-3 text-gray-900 bg-gray-50'>
                         <li>
                             <SidebarChatList sessionId={session.user.id} friends={friends} />
                         </li>

@@ -76,7 +76,7 @@ const SidebarChatList: FC<SidebarChatListProps> = ({ friends, sessionId }) => {
   }, [pathname])
 
   return (
-    <ul role='list' className='max-h-[25rem] overflow-y-auto -mx-2 space-y-1'>
+    <ul role='list' className='max-h-[25rem] overflow-y-auto p-4 bg-gray-50 rounded-xl -mx-2 space-y-1'>
       {activeChats.sort().map((friend) => {
         const unseenMessagesCount = unseenMessages.filter((unseenMsg) => {
           return unseenMsg.senderId === friend.id
@@ -89,7 +89,7 @@ const SidebarChatList: FC<SidebarChatListProps> = ({ friends, sessionId }) => {
                 sessionId,
                 friend.id
               )}`}
-              className='text-gray-700 bg-gray-50 hover:text-indigo-600 m-1 hover:bg-white hover:shadow-sm flex items-center gap-x-3 rounded-xl p-4 text-sm leading-6 font-semibold group'>
+              className='text-gray-700 bg-gray-50 hover:text-indigo-600 m-1 hover:bg-white hover:shadow-sm flex items-center gap-x-3 rounded-xl p-3 text-sm leading-6 font-semibold group'>
               <div className='text-sm font-semibold leading-6 text-gray-900'>
                 <div className='relative h-8 w-8 bg-gray-50 group-hover:bg-white'>
                   <Image
