@@ -73,7 +73,7 @@ const ChatInput: FC<ChatInputProps> = ({ chatPartner, chatId }) => {
 
                 <div
                     onClick={() => textareaRef.current?.focus()}
-                    className='p-2'
+                    className=''
                     aria-hidden='true'
                 >
                     <div className='py-px'>
@@ -87,7 +87,7 @@ const ChatInput: FC<ChatInputProps> = ({ chatPartner, chatId }) => {
                 </div>
                 <div className='absolute right-0 bottom-0 flex justify-between py-2 pl-3 pr-2'>
                     <div className='flex-shrink-0'>
-                        <Button isLoading={isLoading} onClick={sendMessage} type='submit' className='bg-indigo-600 group'>
+                        <Button isLoading={isLoading} onClick={sendMessage} type='submit' className='bg-indigo-600 group rounded-lg'>
                             <SendHorizontal className={cn('', {'hidden': isLoading})}/>
                         </Button>
                     </div>

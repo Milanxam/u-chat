@@ -26,9 +26,9 @@ const Page: FC<pageProps> = () => {
     
   return <>
     <div className='relative'>
-      <div className='absolute background-main inset-0 bg-no-repeat bg-cover bg-center bg-fixed h-screen'></div>
+      <div className='absolute background-main inset-0 bg-no-repeat bg-cover bg-center bg-fixed h-screen overflow-y-clip'></div>
       <div className='relative flex justify-center h-screen px-4 sm:px-10 lg:px-8'>
-        <div className='w-full flex flex-col mt-32 mb-auto pb-12 px-12 max-w-md space-y-3 py-8 bg-white shadow-medium rounded-lg'>
+        <div className='w-full flex flex-col mt-32 mb-auto pb-12 px-12 max-w-md space-y-3 py-8 bg-white shadow-medium rounded-lg scroll-me-0'>
           <div className='flex flex-col items-center'>
             <div className='fill-current text-gray-400'>
               <ChatsCircle size={110}  weight="duotone"/>

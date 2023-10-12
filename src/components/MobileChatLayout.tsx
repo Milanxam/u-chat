@@ -3,7 +3,7 @@
 import { FC, useEffect } from 'react'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { Menu, MessageCircle, MessageCircleIcon, MessageSquare, MessagesSquare, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import Button, { ButtonVariants } from './ui/Button'
 import { Icons } from './Icons'
@@ -14,6 +14,7 @@ import { Session } from 'next-auth'
 import SignOutButton from './SignOutButton'
 import { SideBarOption } from '@/types/typings'
 import { usePathname } from 'next/navigation'
+import { ChatsCircle } from '@phosphor-icons/react'
 
 
 interface MobileChatLayoutProps {
@@ -33,12 +34,13 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
     }, [pathname])
 
   return (
-    <div className='fixed text-black bg-zinc-50 border-b border-zinc-200 top-0 inset-x-0 py-2 px-4'>
+    <div className='fixed text-black bg-zinc-50 border-b border-zinc-200 top-0 inset-x-0 py-1 px-4'>
       <div className='w-full flex justify-between items-center'>
         <div>
           <Link
-            href='/dashboard'>
-              <MessageCircle />
+            href='/dashboard'
+            className='color fill-current text-gray-600 hover:text-indigo-600'>
+              <ChatsCircle size={35} weight='duotone'/>
           </Link>
         </div>
         <Button onClick={() => setOpen(true)} variant='ghost' className='gap-4'>
@@ -64,7 +66,7 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
                     <div className='flex h-full flex-col overflow-hidden bg-white py-6 shadow-xl w-80'>
                       <div className='px-4 sm:px-6'>
                         <div className='flex items-start justify-between'>
-                          <Link href='/dashboard' className='flex h-16 shrink-0 item-center mb-5 gap-3'>
+                          <Link href='/dashboard' className='flex h-16 shrink-0 item-center my-10 -mt-5 -ml-1 gap-3'>
                               <span className='mt-5 h-10 w-auto fill-current text-indigo-500'>
                               <Icons.Logo className='h-10 w-auto text-indigo-600' />
                               </span>
@@ -92,26 +94,25 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
                         <nav className='flex flex-1 flex-col'>
                           <ul
                             role='list'
-                            className='flex flex-1 flex-col gap-y-7'>
+                            className='flex flex-1 flex-col gap-y-3'>
                             <li>
                               <SidebarChatList
                                 friends={friends}
                                 sessionId={session.user.id}
                               />
                             </li>
-
-                            <li>
-                              <div className='text-xs font-semibold leading-6 text-gray-400'>
+                            <div className='text-xs  -mb-2 font-semibold leading-6 text-gray-400'>
                                 Overview
-                              </div>
-                              <ul role='list' className='-mx-2 mt-2 space-y-1'>
+                            </div>
+                            <li>
+                              <ul role='list' className='-mx-2 space-y-2 bg-gray-50 rounded-xl p-3'>
                                   {sidebarOptions.map((option) => {
                                       const Icon = Icons[option.Icon]
                                       return(
                                           <li key={option.id}>
                                               <Link 
                                                   href={option.href}
-                                              className='text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-3 rounded-md p-3 text-sm leading-6 font-semibold'>
+                                                  className='text-gray-700 bg-gray-50 hover:bg-white hover:shadow-sm hover:text-indigo-600 group flex gap-3 rounded-xl mb-[1em] p-3 text-sm leading-6 font-semibold'>
                                                   <span className='text-gray-400 border-gray-200 group-hover:border-indigo-600 group-hover:text-indigo-600 flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium bg-white'>
                                                       <Icon className='h-4 w-4' />
                                                   </span>
@@ -153,7 +154,6 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({friends, session, sidebarO
                           </ul>
                         </nav>
 
-                        {/* content end */}
                       </div>
                     </div>
                   </Dialog.Panel>
