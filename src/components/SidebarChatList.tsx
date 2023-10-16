@@ -83,13 +83,13 @@ const SidebarChatList: FC<SidebarChatListProps> = ({ friends, sessionId }) => {
         }).length
 
         return (
-          <li key={friend.id} className='bg-gray-50 rounded-xl p-2'>
+          <li key={friend.id} className=''>
             <a
               href={`/dashboard/chat/${chatHrefConstructor(
                 sessionId,
                 friend.id
               )}`}
-              className='text-gray-700 bg-gray-50 hover:text-indigo-600 m-1 hover:bg-white hover:shadow-sm flex items-center gap-x-3 rounded-xl p-1 text-sm leading-6 font-semibold group'>
+              className='text-gray-700 bg-gray-50 hover:text-indigo-600 m-3 hover:bg-white hover:shadow-sm flex items-center gap-x-3 rounded-xl text-sm leading-6 font-semibold group'>
               <div className='text-sm font-semibold leading-6 text-gray-900'>
                 <div className='relative h-8 w-8 bg-gray-50 group-hover:bg-white'>
                   <Image
