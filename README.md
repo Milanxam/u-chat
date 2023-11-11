@@ -7,5 +7,7 @@ The app uses nextjs 13 and a google sign in, you can friends and chat in realtim
 - Using next js app router
 - best practice security measures
 - google Oauth for logging in
+- send, recieve messages, add frends, really fast, in real time
+
 
 
