@@ -9,7 +9,10 @@ The app uses nextjs 13 and a google sign in, you can friends and chat in realtim
 - google Oauth for logging in
 - send, recieve messages, add frends, really fast, in real time
 - fully responsive, mobile and other screen sizes
-- industry standard accessability features 
+- industry standard accessability features
+
+### Soon to add
+- Dark mode
 
 
 
