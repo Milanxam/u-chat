@@ -11,8 +11,9 @@ The app uses nextjs 13 and a google sign in, you can friends and chat in realtim
 - fully responsive, mobile and other screen sizes
 - industry standard accessability features
 
-### Soon to add
+### Possibly to add
 - Dark mode
+- AI integration, f.e. message suggestions
 
 
 
