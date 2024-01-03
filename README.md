@@ -10,6 +10,3 @@ The app uses nextjs 13 and a google sign in, you can friends and chat in realtim
 - send, recieve messages, add frends, really fast, in real time
 - fully responsive, mobile and other screen sizes
 - industry standard accessability features
-
-
-we could add some 
