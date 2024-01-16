@@ -11,5 +11,6 @@ The app uses nextjs 13 and a google sign in, you can friends and chat in realtim
 - fully responsive, mobile and other screen sizes
 - industry standard accessability features
 
-Will make more changes in the future, possiby port into a flutter application
+Will make more changes in the future, possiby port into a flutter/reactnative
+application
 
