@@ -12,6 +12,3 @@ The site is live at: https://u-chat-realtime.vercel.app/
 - send, recieve messages, add frends, really fast, in real time
 - fully responsive, mobile and other screen sizes
 - industry standard accessability features
-
-Will m
-
