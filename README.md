@@ -2,6 +2,8 @@
 
 The app uses nextjs 13 and a google sign in, you can friends and chat in realtime, send emojis and more!
 
+The site is live at: https://u-chat-realtime.vercel.app/
+
 ### Features
 
 - Using next js app router
@@ -11,6 +13,5 @@ The app uses nextjs 13 and a google sign in, you can friends and chat in realtim
 - fully responsive, mobile and other screen sizes
 - industry standard accessability features
 
-Will make more changes in the future, possiby port into a flutter/reactnative
-application
+Will m
 
