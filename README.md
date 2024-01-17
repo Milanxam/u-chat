@@ -12,3 +12,5 @@ The site is live at: https://u-chat-realtime.vercel.app/
 - send, recieve messages, add frends, really fast, in real time
 - fully responsive, mobile and other screen sizes
 - industry standard accessability features
+
+![login](https://github.com/Milanxam/u-chat/assets/96538473/acab1dd3-30ea-4134-baa6-19a8efab5fc5)
