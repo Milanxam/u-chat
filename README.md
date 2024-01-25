@@ -1,4 +1,4 @@
-# A realtime, responsive Chat Application using Next-js and Redis! 
+# A realtime, responsive Chat Application with Next-js and Redis! 
 
 The app uses nextjs 13 a redis database, you can sign in with google, add friends and chat in realtime, send emojis and more!
 
