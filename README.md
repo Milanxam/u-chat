@@ -16,7 +16,3 @@ The site is live at: https://u-chat-realtime.vercel.app/
 Login Screen            | In the app: 
 :-------------------------:|:-------------------------:
 ![login](https://github.com/Milanxam/u-chat/assets/96538473/acab1dd3-30ea-4134-baa6-19a8efab5fc5)  | ![chatapp](https://github.com/Milanxam/u-chat/assets/96538473/80297c8d-6f7f-4c1d-ac73-ef1fe36a57d7)
- 
-
-![login](https://github.com/Milanxam/u-chat/assets/96538473/acab1dd3-30ea-4134-baa6-19a8efab5fc5) ![chatapp](https://github.com/Milanxam/u-chat/assets/96538473/80297c8d-6f7f-4c1d-ac73-ef1fe36a57d7)
- 
