@@ -2,7 +2,7 @@
 
 The app uses Nextjs 13 and a Redis database, you can sign in with google, add friends and chat with them in realtime, send emojis and more!
 
-The site is live at: https://u-chat-realtime.vercel.app/as
+The site is live at: https://u-chat-realtime.vercel.app/
 
 ### Features
 
