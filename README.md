@@ -9,7 +9,7 @@ The site is live at: https://u-chat-realtime.vercel.app/
 - Using next js app router
 - best practice security measures
 - google Oauth for logging in
-- send, recieve messages, add frends, really fast, in real time
+- send, recieve messages, add frends, in real time
 - fully responsive, mobile and other screen sizes
 - industry standard accessability features
 
